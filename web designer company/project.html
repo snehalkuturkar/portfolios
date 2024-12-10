@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\fontawesome.css">
+  	<link rel="stylesheet" href="css\brands.css">
+    <link rel="stylesheet" href="css\solid.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script>
+       $(document).ready(function(){
+       $("#myTab a").on('click',function(e){
+       e.preventDefault();
+       $(this).tab('show');
+       });
+       });
+       </script>
+
+<style>
+body{
+  background-color:#e0e0e0;
+}
+
+#sea{
+  position: relative;
+  overflow: hidden;
+}
+
+#fish
+{
+  position:absolute;
+  background-color:rgba(0,0,0,0.5);
+  bottom:0;
+  top:-90%;
+  width:100%;
+  height:100%;
+  transition: all 0.5s;
+
+}
+#sea:hover #fish
+{
+
+top:0;
+}
+</style>
+</head>
+
+<body>
+  <body>
+    <div class="container mt-4" style="background-color:#FFFFFF;border-radius:20px;box-shadow: 10px 10px 5px 12px gray;">
+      <div class="row">
+        <div class="col-md-5 mt-4">
+                      <img src="logo1.png" height="30px" width="120px">
+                  </div>
+        <div class="col-md-7 mt-4">
+          <ul class="nav float-md-right">
+        	<li class="nav-item"><a class="nav-link" href="home.html" style="color:#636282;font-size:20px;font-weight:bolder;">Home</a></li>
+        	<li class="nav-item"><a class="nav-link dropdown" href="project.html" style="color:#636282;font-weight:bolder;font-size:20px;">Project</a>
+          </li>
+        	<li class="nav-item"><a class="nav-link" href="about.html" style="color:#636282;font-weight:bolder;font-size:20px;">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" style="color:#636282;font-weight:bolder;font-size:20px;">Contact</a></li>
+        	</ul>
+         </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+  <img src="work.jpg" height="500px" width="550px">
+    </div>
+
+    <div class="col-md-6 mt-5">
+      <p class= "mt-5" style="font-size:25px;"> NextGen is a renowned web design company in India with more than 16 international awards to its credit.<br>
+        We have been designing, developing, branding, optimizing, and creating apps and web application development for a number of clients belonging to
+        various industry dimensions ranging from MNCs to one man start-ups.</p>
+      </div>
+</div>
+
+<h1 class="text-center mt-5" style="color:#123B51;">Our Works</h1>
+
+<div class="row">
+<div class="col-md-12">
+<ul class="nav nav-pills" id="myTab">
+<li class="nav-item">
+  <a class="nav-link active"  href="#temp" style="font-size:20px;color:black;text-align:center">Website Templates</a></li>
+ <li class="nav-item">
+ <a  class="nav-link"  href="#app" style="font-size:20px;color:black;text-align:center">Mobile application</a></li>
+ <li class="nav-item">
+<a  class="nav-link"  href="#logo" style="font-size:20px;color:black;text-align:center">Logo Design</a></li>
+</ul>
+</div>
+
+<div class="col-md-12">
+	<div class="tab-content py-3" id="vtab">
+  <div class="tab-pane fade show active" id="temp">
+
+	  <div class="row">
+  <div class="col-md-6">
+    <div class="card mb-3" id="sea">
+    <img src="coffice.jpg" class="card-img-top" height="360px">
+
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="shop.jpg" class="card-img-top">
+
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="hotel.jpg" class="card-img-top">
+
+</div>
+</div>
+
+<div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="business.jpg" class="card-img-top">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="tab-pane fade" id="app">
+  <div class="row">
+  <div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="travel.jpg" class="card-img-top" height="360px">
+  </div>
+  </div>
+
+  <div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="bank.jpg" class="card-img-top">
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+<div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="furniture.jpg" class="card-img-top" height="360px">
+
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card mb-3" id="sea">
+<img src="food.jpg" class="card-img-top">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="tab-pane fade" id="logo">
+  <div class="row">
+  <div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="log1.jpg" class="card-img-top" height="360px">
+
+  </div>
+  </div>
+
+  <div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="log2.jpg" class="card-img-top">
+
+  </div>
+  </div>
+  </div>
+
+  <div class="row">
+<div class="col-md-6">
+  <div class="card mb-3" id="sea">
+  <img src="log3.jpg" class="card-img-top" height="360px">
+
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card mb-3" id="sea">
+<img src="log4.jpg" class="card-img-top">
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="row" style="background-color:#535353;color:white;">
+  <div class="col-md-12">
+  <p class="lead text-center" >©2024 All rights reserved to NextGen | Terms & Conditions | Privacy Policy</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
